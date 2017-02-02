@@ -12,6 +12,8 @@ $(document).ready(function() {
 
     // });
 
+    getScrollToTopBtn();
+
 
     $(window).resize(function() {
 
@@ -19,6 +21,17 @@ $(document).ready(function() {
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        // ---------------------
+
+        getScrollToTopBtn();
+
+    });
+
+
+    $(document).scroll(function() {
+
+        getScrollToTopBtn();
 
     });
 
@@ -99,6 +112,37 @@ $(document).ready(function() {
         });
 
     });
+
+    // При клике на кнопку " Вверх " подняться на вверхнюю позицию
+
+    $(".scroll-top").click(function () {
+
+        $("body,html").animate({
+
+            scrollTop: 0
+
+        }, 1000);
+
+        return false;
+
+    });
+
+
+    // Показать - скрыть кнопку " Вверх "
+
+    function getScrollToTopBtn() {
+
+        if ($(window).scrollTop() > $(".header").height() ) {
+
+            $(".scroll-top").fadeIn();
+
+        } else {
+
+            $(".scroll-top").fadeOut();
+
+        }
+
+    }
 
 
 

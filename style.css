@@ -1514,6 +1514,7 @@ section.section-4-bg h2 {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px 0 0;
+    position: relative;
 }
 
 .radio_btn {
@@ -2220,3 +2221,91 @@ footer {
 .footer .seo-txt li a:hover {
     color: #f16522;
 }
+
+
+/*-- Scroll to Top --*/
+
+.scroll-top {
+    /*display: block;*/
+    display: none;
+    width: 82px;
+    height: 82px;
+    cursor: pointer;
+    position: fixed;
+    top: 60%;
+    right: 65px;
+    z-index: 4;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    background: rgba(0, 0, 0, .4);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.scroll-top .fa {
+    font-size: 25px;
+    line-height: 80px;
+    color: #ffffff;
+}
+
+
+/*-- /Scroll to Top --*/
+
+/*-- Show Popup Btn --*/
+
+.show-popup {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: fixed;
+    /*top: 20%;*/
+    top: 391px;
+    right: -104px;
+    z-index: 5;
+    transform: rotate(90deg);
+    padding: 11px 15px 13px 15px;
+    background: rgba(241, 101, 34, 1);
+    border: 1px solid transparent;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.show-popup:hover {
+    background: rgba(255, 120, 56, 1);
+}
+
+.show-popup .fa {
+    margin: 0 10px 0 0;
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+/*-- /Show Popup Btn --*/
