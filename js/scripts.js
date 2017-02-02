@@ -58,4 +58,47 @@ $(document).ready(function() {
     });
 
 
+    $(function() {
+
+        var accordeonIndex;
+
+        var accordeonItemCount = $(".accordeon-item").length - 1;
+
+        var parentAccordeonH;
+
+        $(".accordeon-item-h").click(function() {
+
+            parentAccordeonH = $(this).parent(".accordeon-item");
+
+            if( parentAccordeonH.hasClass("active") ) {
+
+                return false;
+
+            } else {
+
+                for( accordeonIndex = 0; accordeonIndex <= accordeonItemCount; accordeonIndex++) {
+
+                    if( $(".accordeon-item:eq("+ accordeonIndex +")").hasClass("active") ) {
+
+                        $(".accordeon-item:eq("+ accordeonIndex +") .accordeon-item-txt-wrapp").animate({"height" : 0 + "px"}, 300);
+
+                        $(".accordeon-item:eq("+ accordeonIndex +")").removeClass("active");
+
+                    }
+
+                }                
+
+                accordeonItemTxtHeight = $(this).next(".accordeon-item-txt-wrapp").children(".accordeon-item-txt").height();
+
+                $(this).next(".accordeon-item-txt-wrapp").animate({"height" : accordeonItemTxtHeight + "px"}, 300);
+
+                parentAccordeonH.addClass("active");
+
+            }
+
+        });
+
+    });
+
+
 });

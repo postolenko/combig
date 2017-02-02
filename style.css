@@ -185,6 +185,7 @@ textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s e
 section {
     position: relative;
     padding: 50px 0;
+    background: rgba(255, 255, 255, 1);
 }
 
 h1 {
@@ -916,14 +917,26 @@ section.section-1-bg {
 
 .two-cols-article .right {
     display: block;
-    width: 48%;
+    width: 51%;
     min-height: 495px;
     position: relative;
 }
 
 .two-cols-article .left {
     display: block;
+    width: 49%;
+    padding: 45px 0 0 0;
+}
+
+.promo-slider .right {
+    width: 48%;
+}
+
+.promo-slider .left {
     width: 52%;
+}
+
+.promo-slider .two-cols-article .left {
     padding: 60px 0 0 0;
     text-align: right;
 }
@@ -971,6 +984,13 @@ section.section-1-bg {
 .two-cols-article .img-box {
     display: block;
     width: 500px;
+    /*position: absolute;*/
+    position: relative;
+    top: 0;
+    left: 14%;
+}
+
+.promo-slider .two-cols-article .img-box {
     position: absolute;
     top: 0;
     left: 3%;
@@ -1354,7 +1374,7 @@ section.section-4-bg h2 {
 }
 
 .more-btn-box .gold-btn {
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 
@@ -1419,8 +1439,388 @@ section.section-4-bg h2 {
 
 /*-- Main Page Section 8 --*/
 
+.section-7-bg {
+    background: rgba(241, 101, 34, 1);
+}
+
+.section-7-bg h2 {
+    color: #ffffff;
+}
+
+.calc-form {
+    padding: 60px 0 5px 0;
+}
+
+.calc-form h3 {
+    display: block;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 6px 0;
+}
+
+.radio-inpt {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 0 0;
+}
+
+.radio_btn {
+    position: relative;
+}
+
+.radio-inpt label {
+    display: block;
+    position: relative;
+    padding: 0 0 0 12px;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.radio-inpt input[type=radio] {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .01;
+    z-index: -1;
+}
+
+.radio-inpt input[type=radio] + label:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+    left: -12px;
+    background-image: url(img/radio_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -4px -27px;
+}
+
+.radio-inpt input[type=radio]:checked + label:before {
+    background-position: -4px -5px;
+}
+
+.calc-box {
+    font-size: 0;
+    line-height: 0;
+    padding: 22px 0;
+}
+
+.calc-box .inpt-box {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25%;
+}
+
+.calc-box .inpt-box label {
+    display: block;
+    padding: 0 0 5px 0;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.calc-box .inpt-box input[type=text] {
+    display: block;
+    width: 92%;
+    min-height: 54px;
+    /*margin: 0 auto;*/
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #363541;
+    border: 1px solid #6e604a;
+    padding: 12px 10px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.calc-box .inpt-box .gold-btn {
+    display: block;
+    width: 92%;
+    min-width: auto;
+    margin: 0;
+    position: relative;
+    top: 1px;
+    padding: 12px 20px;
+}
+
+.calc-box .inpt-box.calc-result {
+    padding: 0 7% 0 0;
+    text-align: right;
+}
+
+.calc-num .inpt-box label {
+
+}
+
+.calc-box .calc-result input[type=text] {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 0;
+    background: transparent;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: right;
+}
+
+.calc-box .calc-result input::placeholder {
+    color: #ffffff;
+}
+
+.calc-box .calc-result input::-webkit-input-placeholder       { color:#ffffff;  }
+.calc-box .calc-result input::-moz-placeholder                { color:#ffffff;  }
+.calc-box .calc-result input:-moz-placeholder                 { color:#ffffff;  }
+.calc-box .calc-result input:-ms-input-placeholder            { color:#ffffff;  }
+.calc-box .calc-result input:focus::-webkit-input-placeholder { color:#ffffff;  }
+.calc-box .calc-result input:focus::-moz-placeholder          { color:#ffffff;  }
+.calc-box .calc-result input:focus:-moz-placeholder           { color:#ffffff;  }
+.calc-box .calc-result input:focus:-ms-input-placeholder      { color:#ffffff;  }
+
+
+
+.calc-form .calc-descript p {
+    display: table;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.calc-form .calc-descript p span {
+    display: table-cell;
+    vertical-align: top;
+    width: 32px;
+    font-size: 15px;
+    position: relative;
+    top: -3px;
+}
+
 
 /*-- /Main Page Section 8 --*/
+
+/*-- Main Page Section 9 --*/
+
+.section-9-bg {
+    background: rgba(254, 248, 219, 1);
+}
+
+.accordeon {
+    padding: 15px 0 20px 0;
+}
+
+.accordeon-item {
+    margin: 26px 0;
+}
+
+.accordeon-item-h {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.accordeon-item-h h3 {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 1px dashed #f16522;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #f16522;
+}
+
+.accordeon-item.active .accordeon-item-h h3 {
+    border-bottom: 1px dashed transparent;
+}
+
+.accordeon-item-txt-wrapp {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordeon-item.active .accordeon-item-txt-wrapp {
+    height: auto;
+}
+
+.accordeon-item-txt {
+
+}
+
+.accordeon-item-txt p {
+    display: block;
+    padding: 6px 0;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #363541;
+}
+
+.accordeon-item-txt p:first-child {
+    padding: 22px 0 6px 0;
+}
+
+/*-- /Main Page Section 9 --*/
+
+/*-- Main Page Section 10 --*/
+
+section.section-10-bg {
+    background: rgba(254, 248, 219, 1);
+    padding-bottom: 0;
+}
+
+/*-- /Main Page Section 10 --*/
+
+/*-- Main Page Section 11 --*/
+
+.section-11-bg {
+    background-image: url(img/testimonials_bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.testimonials {
+    padding: 22px 0;
+}
+
+.testimonial {
+    display: table;
+    width: 100%;
+    margin: 36px 0;
+}
+
+.testimonial .col  {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.testimonial .col-1 {
+    width: 90px;
+}
+
+.testimonial .col .img-box {
+    display: block;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimonial .col .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.testimonial h3 {
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #363541;
+}
+
+.testimonial-txt {
+    position: relative;
+    padding: 10px 0 0 25px;
+}
+
+.testimonial-txt:before {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "\275D";
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #f9f1cb;
+}
+
+
+.testimonial-txt:after {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    bottom: -21px;
+    right: 0;
+    content: "\275E";
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #f9f1cb;
+}
+
+.testimonial-txt p {
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #363541;
+}
+
+
+/*-- /Main Page Section 11 --*/
+
+/*-- Main Page Section 12 --*/
+
+.section-12-bg {
+    background: rgba(249, 241, 203, 1);
+}
+
+.photo-thumbnails {
+    display: block;
+    width: 102%;
+    margin: 0 0 0 -1%;
+    padding: 30px 0 0 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.photo-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 0 1%;
+}
+
+.photo-thumbnails .thumbnail .img-box {
+    height: 195px;
+}
+
+/*-- /Main Page Section 12 --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
