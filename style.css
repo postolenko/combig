@@ -2232,7 +2232,7 @@ footer {
     height: 82px;
     cursor: pointer;
     position: fixed;
-    top: 60%;
+    bottom: 10%;
     right: 65px;
     z-index: 4;
     overflow: hidden;
@@ -2263,7 +2263,7 @@ footer {
     cursor: pointer;
     position: fixed;
     /*top: 20%;*/
-    top: 391px;
+    top: 270px;
     right: -104px;
     z-index: 5;
     transform: rotate(90deg);
