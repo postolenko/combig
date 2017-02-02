@@ -101,15 +101,5 @@ $(document).ready(function() {
     });
 
 
-    $(function() {
-
-        // setTimeout(function() {
-
-            $(".ytp-title-link").attr("style","display='none !important'");
-
-        // }, 2000);
-
-    });
-
 
 });
