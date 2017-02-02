@@ -2232,7 +2232,7 @@ footer {
     height: 82px;
     cursor: pointer;
     position: fixed;
-    bottom: 10%;
+    bottom: 4%;
     right: 65px;
     z-index: 4;
     overflow: hidden;
