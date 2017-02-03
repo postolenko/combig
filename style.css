@@ -2482,6 +2482,9 @@ section.section-10-bg {
 /*-- Service Page --*/
 
 .service-thumbnails {
+    width: 102%;
+    margin: 0 0 0 -1%;
+    /*overflow: hidden;*/
     padding: 10px 0 0 0;
 }
 
