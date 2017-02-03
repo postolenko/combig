@@ -141,6 +141,35 @@ $(document).ready(function() {
 
     });
 
+
+    // -----------------------------------------------------------
+
+    $(function() {
+
+        $("ul.num-list li").prepend("<span class='num-list-index'></span>");
+
+        var countNumMarkLists = $("ul.num-list").length - 1;
+
+        var markNumListsIndex;
+
+        var markNumListsItemIndex;
+
+        var countNumItemsList;
+
+        for( markNumListsItemIndex = 0; markNumListsItemIndex <= countNumMarkLists; markNumListsItemIndex++ ) {
+
+            countNumItemsList = $("ul.num-list:eq("+ markNumListsItemIndex +") li").length - 1;
+
+            for( markListsItemIndex = 0; markListsItemIndex <= countNumItemsList; markListsItemIndex++) {
+
+                $("ul.num-list:eq("+ markNumListsItemIndex +") li:eq("+ markListsItemIndex +") .num-list-index").text( (markListsItemIndex + 1 ) + ".)" );
+
+            }
+
+        }
+
+    });
+
     // -----------------------------------------------------------
 
     // При клике на кнопку " Вверх " подняться на вверхнюю позицию

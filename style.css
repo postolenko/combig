@@ -317,6 +317,29 @@ ul.arrow-mark li:before {
     color: #f16522;
 }
 
+ul.num-list {
+
+}
+
+ul.num-list li {
+    list-style: none;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #6e604a;
+    padding: 10px 0;
+}
+
+ul.num-list li .num-list-index {
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #6e604a;
+    margin: 0 5px 0 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -2150,18 +2173,18 @@ section.section-10-bg {
     display: block;
     width: 102%;
     margin: 0 0 0 -1%;
-    padding: 30px 0 0 0;
+    padding: 15px 0 0 0;
     font-size: 0;
     line-height: 0;
 }
 
 .photo-thumbnails .slick-prev.slick-arrow {
-    top: 40%;
+    top: 37%;
     left: -70px;
 }
 
 .photo-thumbnails .slick-next.slick-arrow {
-    top: 40%;
+    top: 37%;
     right: -45px;
 }
 
@@ -2174,6 +2197,14 @@ section.section-10-bg {
 
 .photo-thumbnails .thumbnail .img-box {
     height: 195px;
+}
+
+.img-box.h-140 {
+    height: 140px;
+}
+
+.img-box.w-300 {
+    max-width: 300px;
 }
 
 /*-- /Main Page Section 12 --*/
