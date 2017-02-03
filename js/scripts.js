@@ -113,6 +113,36 @@ $(document).ready(function() {
 
     });
 
+    // -----------------------------------------------------------
+
+    $(function() {
+
+        $("ul.with-num-mark li").prepend("<span class='item-num-col'><i class='item-num'></i></span>");
+
+        var countNumMarkLists = $("ul.with-num-mark").length - 1;
+
+        var markNumListsIndex;
+
+        var markNumListsItemIndex;
+
+        var countNumItemsList;
+
+        for( markNumListsItemIndex = 0; markNumListsItemIndex <= countNumMarkLists; markNumListsItemIndex++ ) {
+
+            countNumItemsList = $("ul.with-num-mark:eq("+ markNumListsItemIndex +") li").length - 1;
+
+            for( markListsItemIndex = 0; markListsItemIndex <= countNumItemsList; markListsItemIndex++) {
+
+                $("ul.with-num-mark:eq("+ markNumListsItemIndex +") li:eq("+ markListsItemIndex +") .item-num").text(markListsItemIndex + 1);
+
+            }
+
+        }
+
+    });
+
+    // -----------------------------------------------------------
+
     // При клике на кнопку " Вверх " подняться на вверхнюю позицию
 
     $(".scroll-top").click(function () {
