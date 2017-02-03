@@ -1112,6 +1112,36 @@
 
 							</div>
 
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img7.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img8.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img9.jpg" alt="">
+
+								</div>
+
+							</div>
+
 						</div>
 
 					</div>
@@ -1230,7 +1260,7 @@
 
 				</section>
 
-								<section class="section-4-bg">
+				<section class="section-4-bg">
 					
 					<div class="row">
 						
@@ -1393,6 +1423,23 @@
 			autoplaySpeed: 7000
 
 		});
+
+
+		$(".photo-thumbnails").slick({
+			dots: true,
+			arrows: true,
+			speed: 900,
+			autoplaySpeed: 7000,
+			slidesToShow: 3,
+			responsive: [
+  			  	{
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2
+			      }
+			    }
+			  ]		
+			});
 
 		</script>
 	

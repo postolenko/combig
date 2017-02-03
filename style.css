@@ -520,6 +520,93 @@ a:active {
     transform: scale(1.05);
 }
 
+
+/*-- Breadcrumbs --*/
+
+section.bredcrumbs-sect {
+    padding: 17px 0 10px 0;
+    background: rgba(254, 249, 219, 1);
+}
+
+.breadcrumbs {
+
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.breadcrumb-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 9px 0 5px;
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #6e604a;
+    border-bottom: 1px solid rgba(110, 96, 74, .5);
+
+    -webkit-transition-property: color border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.breadcrumb-link:link,
+.breadcrumb-link:visited {
+    color: #6e604a;
+    border-bottom: 1px solid rgba(110, 96, 74, .5);
+}
+
+.breadcrumb-link.actice,
+.breadcrumb-link:actie {
+    color: #f16522;
+    border-bottom: 1px solid rgba(241, 101, 34, 1);
+}
+
+.breadcrumb-link:hover {
+    color: #f16522;
+    border-bottom: 1px solid rgba(241, 101, 34, 1);
+}
+
+.breadcrumbs li:after {
+    display: inline-block;
+    vertical-align: top;
+    content: "\2f";
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #6e604a;
+}
+
+.breadcrumbs li:last-child .breadcrumb-link {
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs li:last-child:after {
+    display: none;
+}
+
+/*-- /Breadcrumbs --*/
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -1335,7 +1422,8 @@ section.section-4-bg h2 {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    padding: 20px 1%;
+    /*padding: 20px 1%;*/
+    padding: 10px 1%;
 }
 
 .news-thumbnail .date {
@@ -1420,6 +1508,7 @@ section.section-4-bg h2 {
 
 .more-btn-box {
     text-align: center;
+    padding: 15px 0;
 }
 
 .more-btn-box .gold-btn {
@@ -1847,6 +1936,7 @@ section.section-10-bg {
 
 .section-12-bg {
     background: rgba(249, 241, 203, 1);
+    position: relative;
 }
 
 .photo-thumbnails {
@@ -1858,11 +1948,21 @@ section.section-10-bg {
     line-height: 0;
 }
 
+.photo-thumbnails .slick-prev.slick-arrow {
+    top: 40%;
+    left: -70px;
+}
+
+.photo-thumbnails .slick-next.slick-arrow {
+    top: 40%;
+    right: -45px;
+}
+
 .photo-thumbnails .thumbnail {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    padding: 0 1%;
+    padding: 10px 10px;
 }
 
 .photo-thumbnails .thumbnail .img-box {
