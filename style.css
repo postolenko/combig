@@ -1708,7 +1708,7 @@ section.section-4-bg h2 {
 
 .section-6-bg {
     background: rgba(254, 248, 219, 1);
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .how-work-thumbnails {
@@ -1721,16 +1721,30 @@ section.section-4-bg h2 {
     width: 25%;
     padding: 15px 2%;
     text-align: center;
+    position: relative;
+}
+
+.how-work-thumbnails .thumbnail .count-thumb {
+    font-family: "Gotham Pro", Arial, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #f9f1cb;
+    position: absolute;
+    top: 42px;
+    left: 46px;
+    padding: 0;
 }
 
 .how-work-thumbnails .thumb-icon {
     display: block;
     width: 140px;
     height: 120px;
-    margin: 14px auto;
+    margin: 5px auto;
     background-image: url(img/thumbnail_sprite.png);
     background-repeat: no-repeat;
-    /*background-position: 0 0;*/
+    position: relative;
+    z-index: 2;
 }
 
 .how-work-thumbnails .icon-1 {
@@ -2407,6 +2421,30 @@ section.section-10-bg {
     font-weight: bold;
     color: #363541;
     padding: 0;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.our-team-thumbnails .thumbnail:hover h3{
+    color: #f16522;
 }
 
 .our-team-thumbnails .thumbnail p {
@@ -2440,6 +2478,65 @@ section.section-10-bg {
 }
 
 /*-- /Article Page --*/
+
+/*-- Service Page --*/
+
+.service-thumbnails {
+    padding: 10px 0 0 0;
+}
+
+.service-thumbnails .thumbnail .img-box {
+    height: 210px;
+}
+
+.link-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 5px 1%;
+}
+
+.link-thumbnails .thumbnail-cnt {
+    width: 100%;
+    text-align: center;
+}
+
+.link-thumbnails .thumbnail-cnt .img-box {
+    height: 210px;
+    margin: 15px 0;
+}
+
+.link-thumbnails .thumbnail-cnt h3 {
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.link-thumbnails .thumbnail-cnt:hover h3 {
+    color: #f16522;
+}
+
+.link-thumbnails .thumbnail-cnt p {
+    padding: 10px 0;
+}
+
+/*-- /Service Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
