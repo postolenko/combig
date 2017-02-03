@@ -50,7 +50,7 @@
         url("fonts/GothamPro-Bold.woff") format("woff"),
         url("fonts/GothamPro-Bold.ttf") format("truetype"),
         url("fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
-    font-weight: bold;
+    font-weight: 800;
     font-style: normal;
 }
 
