@@ -16,11 +16,7 @@ $(document).ready(function() {
 
     getScrollToTopBtn();
 
-    // popupPosition(popupClass);
-
-    $(window).resize(function() {
-
-        
+    $(window).resize(function() { 
 
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -31,9 +27,6 @@ $(document).ready(function() {
 
         getScrollToTopBtn();
 
-        // popupPosition(popupClass);
-
-        // $(".popup").css({"top" : ( $(window).height() - $(".popup").outerHeight(true) ) / 2 + "px"});
 
         $("." + popupClass).css({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"});
 

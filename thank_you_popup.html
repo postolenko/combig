@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="">
+
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="font-awesome.css">
+
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
+
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+
+	<script type="text/javascript" src="slick/slick.js"></script>
+
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+
+
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+
+	
+	<title>Окна</title>
+	
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<!-- Popups -->
+
+	<div class="popup-sect"  style="display: block;">
+		
+		<div class="popup-bg"></div>
+
+<!-- 		<div class="popup popup-callback">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
+			
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
+
+				</form>
+			
+			</div>
+
+		</div>
+
+
+
+		<div class="popup popup-callback-message">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
+			
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="textarea-box">
+						
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+						<div class="textarea">
+
+							<textarea placeholder="Ваше сообщение"></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
+
+				</form>
+			
+			</div>
+
+		</div> -->
+
+		
+
+		<div class="popup popup-thanks" style="display: block;">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Спасибо, мы перезвоним Вам в ближайшее время</h2>
+
+		</div>
+
+		<script type="text/javascript">
+			
+			$(".popup").css({"left" : ( $(window).width() - $(".popup").width() ) / 2 + "px"});
+
+	        setTimeout(function() {
+
+	            $(".popup").animate({"top" : ( $(window).height() - $(".popup").outerHeight(true) ) / 2 + "px"}, 700);
+
+	        }, 300);
+
+		</script>
+
+
+	</div>
+<!-- 
+	<div class="popup-sect">
+		
+		<div class="popup-bg"></div>
+
+		<div class="popup popup-callback-message">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
+			
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="textarea-box">
+						
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+						<div class="textarea">
+
+							<textarea placeholder="Ваше сообщение"></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
+
+				</form>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="popup-sect">
+
+		<div class="popup-bg"></div>
+
+		<div class="popup popup-thanks">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Спасибо, мы перезвоним Вам в ближайшее время</h2>
+
+		</div>
+
+	</div> -->
+
+	<!-- /Popups -->
+
+	<button type="button" class="scroll-top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+	<button class="show-popup show-popup-callback-message callback"><i class="fa fa-envelope-o" aria-hidden="true"></i>Оставить сообщение</button>
+
+	<!-- Header -->
+
+	<header>
+
+		<div class="header">
+			
+			<div class="header-top-row">
+
+				<div class="row offset-ziro">
+				
+					<div class="col col-1">
+						
+						<a href="#" class="logo">
+
+							<img src="img/logo.png" class="logo-img" alt="">
+
+							<h2>Сделаем то,<br /> что другие не в силах!</h2>
+
+						</a>
+
+					</div>
+
+					<div class="col col-2">
+						
+						<div>
+
+							<ul class="contacts">
+								
+								<li><i class="fa fa-map-marker" aria-hidden="true"></i><p>г.Москва, ул. Дорожная 54-Б м.Аннино</p></li>
+
+								<li><i class="fa fa-envelope" aria-hidden="true"></i><p>Написать письмо:<br /> <a href="mailto:kombig@list.ru">kombig@list.ru</a></p></li>
+
+							</ul>
+
+						</div>
+
+						<div>
+						
+							<div class="search">
+
+								<div class="search-form">
+
+									<form>
+
+										<input type="text" placeholder="Введите строку для поиска">
+
+										<button type="button"><i class="search-icon"></i></button>
+
+									</form>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col col-3">
+
+						<div class="align-center">
+						
+							<a class="tel-link" href="tel:+74957451360">+7 (495) 745-13-60</a>
+
+							<p class="job-time">ПН-ПТ с 10:00 до 18:00</p>
+
+							<button type="button" class="gold-btn show-popup-callback callback">Обратный звонок</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="main-nav">
+				
+				<div class="row">
+
+					<ul class="main-nav-list">
+
+						<li><a href="#" class="main-nav-link">О нас</a></li>
+						<li><a href="#" class="main-nav-link">Услуги</a></li>
+						<li><a href="#" class="main-nav-link">Товары</a></li>
+						<li><a href="#" class="main-nav-link">Гарантии</a></li>
+						<li><a href="#" class="main-nav-link">Сертификаты</a></li>
+						<li><a href="#" class="main-nav-link">Статьи</a></li>
+						<li><a href="#" class="main-nav-link">Партнерам</a></li>
+						<li><a href="#" class="main-nav-link">Контакты</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+								
+	</header>
+
+	<!-- /Header -->
+
+		<!-- Content -->
+			<div class="content">
+
+				<section class="section-1-bg">
+
+					<div class="promo-slider">
+
+						<div class="two-cols-article  clearfix">
+						
+							<div class="right">
+								
+								<div class="article-img-box img-box">
+									
+									<img src="img/article_1_img.png" alt="Ремонт подоконников">
+
+								</div>
+
+							</div>
+
+							<div class="left">
+
+								<div class="slide-content">
+									
+									<h2>Ремонт подоконников</h2>
+
+									<p>Ничто не вечно в этом мире. Ваш подоконник пришёл в негодность. Что делать: выламывать старый и ставить новый? Но это грязь, порванные обои, разбитые откосы. А если они пластиковые, то их необходимо менять после замены подоконника. В голове появляется вопрос - как отреставрировать подоконник?</p>
+
+									<a href="#" class="gold-btn">Узнать больше</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="two-cols-article  clearfix">
+						
+							<div class="right">
+								
+								<div class="article-img-box img-box">
+									
+									<img src="img/article_1_img.png" alt="Ремонт подоконников">
+
+								</div>
+
+							</div>
+
+							<div class="left">
+
+								<div class="slide-content">
+									
+									<h2>Ремонт подоконников 2</h2>
+
+									<p>Ничто не вечно в этом мире. Ваш подоконник пришёл в негодность. Что делать: выламывать старый и ставить новый? Но это грязь, порванные обои, разбитые откосы. А если они пластиковые, то их необходимо менять после замены подоконника. В голове появляется вопрос - как отреставрировать подоконник?</p>
+
+									<a href="#" class="gold-btn">Узнать больше</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="two-cols-article  clearfix">
+						
+							<div class="right">
+								
+								<div class="article-img-box img-box">
+									
+									<img src="img/article_1_img.png" alt="Ремонт подоконников">
+
+								</div>
+
+							</div>
+
+							<div class="left">
+
+								<div class="slide-content">
+									
+									<h2>Ремонт подоконников 3</h2>
+
+									<p>Ничто не вечно в этом мире. Ваш подоконник пришёл в негодность. Что делать: выламывать старый и ставить новый? Но это грязь, порванные обои, разбитые откосы. А если они пластиковые, то их необходимо менять после замены подоконника. В голове появляется вопрос - как отреставрировать подоконник?</p>
+
+									<a href="#" class="gold-btn">Узнать больше</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-2-bg">
+					
+					<div class="row">
+
+						<h2 class="sect-h">Преимущества работы с нами</h2>
+						
+						<div class="thumbnails advantages-thumbnails offset-ziro">
+							
+							<div class="thumbnail-box">
+								
+								<div class="thumbnail">
+									
+									<i class="thumb-icon icon-1"></i>
+
+									<h3>Низкие цены</h3>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail-box">
+								
+								<div class="thumbnail">
+									
+									<i class="thumb-icon icon-2"></i>
+
+									<h3>Профессиональный ремонт</h3>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labor</p>
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail-box">
+								
+								<div class="thumbnail">
+									
+									<i class="thumb-icon icon-3"></i>
+
+									<h3>Индивидуальный подход</h3>
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-3-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Этапы ремонта</h2>
+
+						<div class="articles">
+							
+							<div class="article">
+								
+								<div class="col">
+									
+									<div class="img-box">
+										
+										<img src="img/img1.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="col">
+									
+									<p class="count-article">01</p>
+
+									<div class="article-txt">
+
+										<h3>Подготовка подоконника к установке</h3>
+
+										<p>Длина подоконника должна превышать размеры окна примерно на 100 мм (по 50 с каждой стороны). Ширина подоконника подбирается такой, чтобы в готовом виде он отступал от стены на 50 мм или менее. Для широких подоконников потребуется установка ...</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="article">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/article_img_2.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+
+									<p class="count-article">02</p>
+
+									<div class="article-txt">
+									
+										<h3>Подготовка участка стены</h3>
+
+										<p>Основание очищают и выравнивают. Заделывают отверстия, которые могли появиться во время установки окна. С помощью перфоратора или болгарки в стенах делают канавки для заглубления подоконника. В откосах, обшитых гипроком, для этой цели ...</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="article">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/img3.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+
+									<p class="count-article">03</p>
+
+									<div class="article-txt">
+									
+										<h3>Контроль ровности кромки окна</h3>
+
+										<p>Любые неровности помешают прижать полотно к окну. Заусенцы срезают ножом. Изгиб кромки корректируется клиньями или монтажной пеной. Если на месте добиться ровности невозможно, приходится демонтировать окно и исправлять</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="article">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/img4.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+
+									<p class="count-article">04</p>
+
+									<div class="article-txt">
+									
+										<h3>Заделка монтажного шва</h3>
+
+										<p>Если предусмотрена пароизоляция, то вначале шов проклеивают пароизоляционной лентой. Зазор заполняют монтажной пеной.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="article">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/img5.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+
+									<p class="count-article">05</p>
+
+									<div class="article-txt">
+										
+										<h3>Установка подоконника</h3>
+
+										<p>Под край окна по длине подкладывают монтажные клинья (деревянные или пластиковые), которые прижмут подоконник снизу. Размер их подбирается так, чтобы подоконник плотно вошел под нижнюю кромку окна, без зазоров. Плоскость, образованная ...</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-4-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Заказ обратного звонка</h2>
+
+						<div class="callback-form">
+							
+							<div class="inpt-field">
+
+								<i class="fa fa-user" aria-hidden="true"></i>
+								
+								<input type="text" placeholder="Ваше имя">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								
+								<input type="tel" placeholder="Ваш телефон">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								
+								<input type="email" placeholder="Ваш email">
+
+							</div>
+
+							<div class="sbmit-btn-box">
+								
+								<button type="submit" class="gold-btn">Заказать</button>
+
+							</div>
+
+						</div>
+
+						<p>После отправки заявки мы перезвоним Вам в ближайшее время и ответим на Ваши вопросы</p>
+
+					</div>
+
+				</section>
+
+				<section class="section-5-bg">
+
+					<div class="row">
+					
+						<h2 class="with-pseudo">Новости</h2>
+
+						<div class="thumbnails article-thumbanails offset-ziro">
+							
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+						</div>
+
+						<div class="more-btn-box">
+
+							<a href="#" class="gold-btn">Все новости</a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-6-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Как начать с нами работать</h2>
+
+						<div class="thumbnails how-work-thumbnails offset-ziro">
+							
+							<div class="thumbnail">
+
+								<p class="count-thumb">01</p>
+								
+								<i class="thumb-icon icon-1"></i>
+
+								<p>Звоните нам или оставляете заявку</p>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<p class="count-thumb">02</p>
+								
+								<i class="thumb-icon icon-2"></i>
+
+								<p>Согласование времени и места встречи</p>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<p class="count-thumb">03</p>
+								
+								<i class="thumb-icon icon-3"></i>
+
+								<p>Выезд мастера на место для диагностики</p>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<p class="count-thumb">04</p>
+								
+								<i class="thumb-icon icon-4"></i>
+
+								<p>Производим работы по ремонту подоконников</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-7-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Расчёт стоимости ремонта подоконника</h2>
+
+						<div class="calc-form">
+
+							<form>
+
+								<div>
+
+									<h3>Установка:</h3>
+									
+									<div class="radio-inpt">
+										
+										<input type="radio" class="radio_btn" name="calc_radio_1" id="radio_1" checked>
+										<label for="radio_1">Требуется&#10038;</label>
+
+									</div>
+
+									<div class="radio-inpt">
+										
+										<input type="radio" class="radio_btn" name="calc_radio_1" id="radio_2">
+										<label for="radio_2">Не требуется (самовывоз)&#10038;&#10038;</label>
+
+									</div>
+
+								</div>
+
+								<div class="calc-box">
+									
+									<div class="inpt-box">
+
+										<label>Ширина накладки (см):</label>
+										
+										<input class="calc-num" type="text" placeholder="35">
+
+									</div>
+
+									<div class="inpt-box">
+
+										<label>Длинна накладки (см):</label>
+										
+										<input class="calc-num" type="text" placeholder="35">
+
+									</div>
+
+									<div class="inpt-box">
+
+										<button type="button" class="gold-btn" >Рассчитать</button>
+
+									</div>
+
+									<div class="inpt-box calc-result">
+										
+										<label>Итого, руб:</label>
+
+										<input type="text" placeholder="3253" disabled>
+
+									</div>
+
+								</div>
+
+								<div class="calc-descript">
+									
+									<p><span>&#10038;</span>При заказе с установкой, доставка заказа на один адрес по Москве, не зависимо от количества изделий + 500 руб.</p>
+
+									<p><span>&#10038;&#10038;</span>При самовывозе накладки продаются длиной 1.5 или 3 метра.</p>
+
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-8-bg">
+					
+					<div class="row">
+						
+						<h2 class="with-pseudo">Часто читаемое</h2>
+
+						<div class="thumbnails article-thumbanails offset-ziro">
+							
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+							<div class="news-thumbnail thumbnail">
+								
+								<p class="date">19.01.2017</p>
+
+								<h3>Российские лесные воры по продаже древесины в Северной Америке</h3>
+
+								<div class="img-box">
+									
+									<img src="img/img6.jpg" alt="Российские лесные воры по продаже древесины в Северной Америке" >
+
+								</div>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+
+								<a href="#" class="more-link">подробнее...</a>
+
+							</div>
+
+						</div>
+
+						<div class="more-btn-box">
+
+							<a href="#" class="gold-btn">Все статьи</a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-9-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">ЧАВО</h2>
+
+						<div class="accordeon">
+								
+							<div class="accordeon-item active">
+								
+								<div class="accordeon-item-h">
+
+									<h3>Можно ли перенести мой сайт и все его содержимое на другой хостинг?</h3>
+
+								</div>
+
+								<div class="accordeon-item-txt-wrapp">
+									
+									<div class="accordeon-item-txt">
+										
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="accordeon-item">
+								
+								<div class="accordeon-item-h">
+
+									<h3>Стоимость месяца функционирования сайта за 199 рублей, это очень дорого?</h3>
+
+								</div>
+
+								<div class="accordeon-item-txt-wrapp">
+									
+									<div class="accordeon-item-txt">
+										
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="accordeon-item">
+								
+								<div class="accordeon-item-h">
+
+									<h3>В чем подвох, бесплатный сыр бывает только в мышеловке?</h3>
+
+								</div>
+
+								<div class="accordeon-item-txt-wrapp">
+									
+									<div class="accordeon-item-txt">
+										
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="accordeon-item">
+								
+								<div class="accordeon-item-h">
+
+									<h3>На чье имя оформляется домен, можно ли потом его забрать?</h3>
+
+								</div>
+
+								<div class="accordeon-item-txt-wrapp">
+									
+									<div class="accordeon-item-txt">
+										
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="accordeon-item">
+								
+								<div class="accordeon-item-h">
+
+									<h3>Что будет если я забуду оплатить тариф PRO?</h3>
+
+								</div>
+
+								<div class="accordeon-item-txt-wrapp">
+									
+									<div class="accordeon-item-txt">
+										
+										<p>Стоимость создания и поддержания сайта 0 рублей. При этом вы получаете бесплатно домен второго уровня на 1 год, раскрутку по низкочастотным запросам тоже за 0 рублей</p>
+
+										<p>За 199 рублей вы получаете дополнительный функционал, бесплатные семинары и вебинары по интернет-маркетингу и удаление рекламы. Согласитесь, это смешные деньги</p>
+
+									</div>
+									
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="more-btn-box">
+
+							<a href="#" class="gold-btn">Все вопросы и ответы</a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-4-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Заказ обратного звонка</h2>
+
+						<div class="callback-form">
+							
+							<div class="inpt-field">
+
+								<i class="fa fa-user" aria-hidden="true"></i>
+								
+								<input type="text" placeholder="Ваше имя">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								
+								<input type="tel" placeholder="Ваш телефон">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								
+								<input type="email" placeholder="Ваш email">
+
+							</div>
+
+							<div class="sbmit-btn-box">
+								
+								<button type="submit" class="gold-btn">Заказать</button>
+
+							</div>
+
+						</div>
+
+						<p>После отправки заявки мы перезвоним Вам в ближайшее время и ответим на Ваши вопросы</p>
+
+					</div>
+
+				</section>
+
+				<section class="section-10-bg">
+
+					<h2 class="row sect-h">Основной сео текст</h2>
+					
+					<div class="two-cols-article row clearfix">
+						
+						<div class="right">
+							
+							<div class="article-img-box img-box">
+								
+								<img src="img/article_2_img.png" alt="Ремонт подоконников">
+
+							</div>
+
+						</div>
+
+						<div class="left">
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem</p>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-11-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Отзывы</h2>
+
+						<div class="testimonials">
+							
+							<div class="testimonial">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/rev1.jpg" alt="Александр Лосинец">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+									
+									<h3>Александр Лосинец</h3>
+
+									<div class="testimonial-txt">
+										
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="testimonial">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/rev2.jpg" alt="Александр Лосинец">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+									
+									<h3>Мария Силуянова</h3>
+
+									<div class="testimonial-txt">
+										
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="testimonial">
+								
+								<div class="col col-1">
+									
+									<div class="img-box">
+										
+										<img src="img/rev3.jpg" alt="Александр Лосинец">
+
+									</div>
+
+								</div>
+
+								<div class="col col-2">
+									
+									<h3>Анастасия Кожевникова</h3>
+
+									<div class="testimonial-txt">
+										
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-12-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Фото отремонтированных подоконников</h2>
+
+						<div class="thumbnails photo-thumbnails offset-ziro">
+							
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img7.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img8.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img9.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img7.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img8.jpg" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="thumbnail">
+
+								<div class="img-box">
+									
+									<img src="img/img9.jpg" alt="">
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-13-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Видео ремонта подоконников</h2>
+
+						<div class="video-box">
+							
+							<iframe width="" height="" src="https://www.youtube.com/embed/nrdB9YycDzA" frameborder="0" allowfullscreen></iframe>
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-14-bg">
+					
+					<div class="users-info row clearfix">
+
+						<div class="col left">
+							
+							<h2>Голосование</h2>
+
+							<h3>Вы когда-нибудь ремонтировали москитные сетки?</h3>
+
+							<div class="radio-btn-black-box">
+
+								<div class="radio-btn-black">
+									
+									<input type="radio" name="radio_2" id="radio_2_1" checked>
+
+									<label for="radio_2_1">Да</label>
+
+								</div>
+
+								<div class="radio-btn-black">
+									
+									<input type="radio" name="radio_2" id="radio_2_2">
+
+									<label for="radio_2_2">Нет</label>
+
+								</div>
+
+								<div class="radio-btn-black">
+									
+									<input type="radio" name="radio_2" id="radio_2_3">
+
+									<label for="radio_2_3">Их кто-то ремонтирует?</label>
+
+								</div>
+
+							</div>
+
+							<div class="offset-ziro vote-row">
+								
+								<div class="inner-col">
+										
+									<button class="gold-btn">Проголосовать</button>
+
+								</div>
+
+								<div class="inner-col">
+										
+									<a href="#" class="orange-link">Посмотреть результаты голосования</a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col right">
+							
+							<h2>Пользователи онлайн</h2>
+
+							<div class="count-guests">
+								
+								<p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Гостей: <span>4</span></p>
+								<p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Пользователей: <span>0</span></p>
+								<p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Всего: <span>4</span></p>
+
+							</div>
+
+							<div class="payment-row">
+								
+								<div class="inner-col-1">
+									
+									<i class="yandex-icon"></i>
+
+								</div>
+
+								<div class="inner-col-2">
+										
+									<button class="gold-btn h-34">Оплатить</button>
+
+								</div>
+
+							</div>
+
+							<div>
+									
+								<a href="#" class="orange-link">Реквизиты для оплаты</a>
+
+							</div>							
+
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="section-4-bg">
+					
+					<div class="row">
+						
+						<h2 class="sect-h">Заказ обратного звонка</h2>
+
+						<div class="callback-form">
+							
+							<div class="inpt-field">
+
+								<i class="fa fa-user" aria-hidden="true"></i>
+								
+								<input type="text" placeholder="Ваше имя">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								
+								<input type="tel" placeholder="Ваш телефон">
+
+							</div>
+
+							<div class="inpt-field">
+
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								
+								<input type="email" placeholder="Ваш email">
+
+							</div>
+
+							<div class="sbmit-btn-box">
+								
+								<button type="submit" class="gold-btn">Заказать</button>
+
+							</div>
+
+						</div>
+
+						<p>После отправки заявки мы перезвоним Вам в ближайшее время и ответим на Ваши вопросы</p>
+
+					</div>
+
+				</section>
+
+			</div>
+		<!-- /Content -->
+
+		<!-- Footer -->
+
+		<footer>
+			
+			<div class="footer">
+
+				<div class="row offset-ziro">
+				
+					<div class="col col-1">
+						
+						<a href="#" class="logo">
+
+							<img src="img/logo.png" class="logo-img" alt="">
+
+							<p>2011 - 2017 © Комбиг</p>
+
+						</a>
+
+						<p>г.Москва, ул. Дорожная 54-Б<br /> м.Аннино</p>
+
+						<p class="job-time">ПН-ПТ с 10:00 до 18:00</p>
+
+						<p class="padding-0">
+
+							<a class="tel-link" href="tel:+74957451360">+7 (495) 745-13-60</a>
+
+						</p>
+
+						<p class="padding-0">
+
+							<a href="#" class="callback-link show-popup-callback callback">Обратный звонок</a>
+
+						</p>
+
+					</div>
+
+					<div class="col col-2">
+
+						<h3>Навигация</h3>
+						
+						<ul class="seo-txt">
+
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Товары</a></li>
+							<li><a href="#">Гарантии</a></li>
+							<li><a href="#">Сертификаты</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Контакты</a></li>
+
+						</ul>
+
+					</div>
+
+					<div class="col col-3">
+						
+						<h3>Наши услуги</h3>
+
+						<ul class="seo-txt">
+
+							<li><a href="#">Ремонт подоконников</a></li>
+							<li><a href="#">Отделка дверных откосов</a></li>
+							<li><a href="#">Ремонт оконных откосов</a></li>
+							<li><a href="#">Ремонт окон пвх</a></li>
+							<li><a href="#">Ремонт дверных окон</a></li>
+							<li><a href="#">Установка пластиковых окон</a></li>
+							<li><a href="#">Утепление деревянных окон</a></li>
+							<li><a href="#">Утепление пластиковых окон</a></li>
+							<li><a href="#">Регулировка окон пвх</a></li>
+
+						</ul>
+
+					</div>
+
+					<div class="col col-4">
+						
+						<h3>Наши товары</h3>
+
+						<ul class="seo-txt">
+
+							<li><a href="#">Пластиковые окна</a></li>
+							<li><a href="#">Деревянные окна</a></li>
+							<li><a href="#">Москитные сетки</a></li>
+							<li><a href="#">Краска утеплитель</a></li>
+							<li><a href="#">Товар 1</a></li>
+							<li><a href="#">Товар 2</a></li>
+							<li><a href="#">Товар 3</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>			
+
+		</footer>
+
+		<!-- /Footer -->
+
+		<script src="js/scripts.js"></script>
+
+		<script>
+
+		(function($){
+
+			$(window).on("load",function(){
+				
+				$(".popup-scroll").mCustomScrollbar();
+
+			});
+
+		})(jQuery);
+			
+		$(".promo-slider").slick({
+
+			dots: true,
+			fade: true,
+			arrows: true,
+			speed: 900,
+			autoplaySpeed: 7000
+
+		});
+
+
+		$(".photo-thumbnails").slick({
+			dots: true,
+			arrows: true,
+			speed: 900,
+			autoplaySpeed: 7000,
+			slidesToShow: 3,
+			responsive: [
+  			  	{
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2
+			      }
+			    }
+			  ]		
+			});
+
+		</script>
+	
+	</div>
+
+</body>
+</html>
