@@ -12,10 +12,15 @@ $(document).ready(function() {
 
     // });
 
+    var popupClass;
+
     getScrollToTopBtn();
 
+    // popupPosition(popupClass);
 
     $(window).resize(function() {
+
+        
 
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -25,6 +30,12 @@ $(document).ready(function() {
         // ---------------------
 
         getScrollToTopBtn();
+
+        // popupPosition(popupClass);
+
+        $(".popup").css({"top" : ( $(window).height() - $(".popup").outerHeight(true) ) / 2 + "px"});
+
+        // ----------------------------------------
 
     });
 
@@ -167,6 +178,47 @@ $(document).ready(function() {
             }
 
         }
+
+    });
+
+    // -----------------------------------------------------------
+
+    $(".callback").click(function() {
+
+        $(".popup-sect").fadeIn(300);
+
+        if($(this).hasClass("show-popup-callback")) {
+
+            popupClass = "popup-callback";
+
+        } else if($(this).hasClass("show-popup-callback-message")) {
+
+            popupClass = "popup-callback-message";
+
+        }
+
+        $("." + popupClass).fadeIn(300);
+
+        $("." + popupClass).css({"left" : ( $(window).width() - $("." + popupClass).width() ) / 2 + "px"});
+
+        setTimeout(function() {
+
+            $("." + popupClass).animate({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"}, 700);
+
+        }, 300);
+
+    });
+
+
+    $(function() {
+
+        $(".popup-bg, .close-popup").click(function() {
+
+            $(".popup-sect").fadeOut(300);
+
+            $(".popup").fadeOut(300);
+
+        });
 
     });
 

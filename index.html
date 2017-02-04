@@ -22,10 +22,13 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
 	<script type="text/javascript" src="slick/slick.js"></script>
+
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
@@ -46,18 +49,184 @@
 
 	<!-- Popups -->
 
-	<div class="popup">
+	<div class="popup-sect">
 		
 		<div class="popup-bg"></div>
 
+		<div class="popup popup-callback">
 
-		<div class="popup-callback">
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
 			
-			<div class="popup-callback-form">
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
+
+				</form>
 			
-				<form>
-					
-				
+			</div>
+
+		</div>
+
+
+
+		<div class="popup popup-callback-message">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
+			
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="textarea-box">
+						
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+						<div class="textarea">
+
+							<textarea placeholder="Ваше сообщение"></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
+
+				</form>
+			
+			</div>
+
+		</div>
+
+		
+
+		<div class="popup popup-thanks">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Спасибо, мы перезвоним Вам в ближайшее время</h2>
+
+		</div>
+
+
+	</div>
+<!-- 
+	<div class="popup-sect">
+		
+		<div class="popup-bg"></div>
+
+		<div class="popup popup-callback-message">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Заказ обратного звонка</h2>
+			
+			<div class="popup-callback-form popup-scroll">				
+
+				<form>				
+
+					<div class="inpt-field">
+
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
+						<input type="text" placeholder="Ваше имя">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						
+						<input type="tel" placeholder="Ваш телефон">
+
+					</div>
+
+					<div class="inpt-field">
+
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						
+						<input type="email" placeholder="Ваш email">
+
+					</div>
+
+					<div class="textarea-box">
+						
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+						<div class="textarea">
+
+							<textarea placeholder="Ваше сообщение"></textarea>
+
+						</div>
+
+					</div>
+
+					<div class="sbmit-btn-box">
+						
+						<button type="submit" class="gold-btn">Заказать</button>
+
+					</div>
 
 				</form>
 			
@@ -67,11 +236,25 @@
 
 	</div>
 
+	<div class="popup-sect">
+
+		<div class="popup-bg"></div>
+
+		<div class="popup popup-thanks">
+
+			<button type="button" class="close-popup">&#10006;</button>
+
+			<h2>Спасибо, мы перезвоним Вам в ближайшее время</h2>
+
+		</div>
+
+	</div> -->
+
 	<!-- /Popups -->
 
 	<button type="button" class="scroll-top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 
-	<button class="show-popup"><i class="fa fa-envelope-o" aria-hidden="true"></i>Оставить сообщение</button>
+	<button class="show-popup show-popup-callback-message callback"><i class="fa fa-envelope-o" aria-hidden="true"></i>Оставить сообщение</button>
 
 	<!-- Header -->
 
@@ -139,7 +322,7 @@
 
 							<p class="job-time">ПН-ПТ с 10:00 до 18:00</p>
 
-							<button type="button" class="gold-btn show-callback-popup">Обратный звонок</button>
+							<button type="button" class="gold-btn show-popup-callback callback">Обратный звонок</button>
 
 						</div>
 
@@ -1372,7 +1555,7 @@
 
 						<p class="padding-0">
 
-							<a href="#" class="callback-link">Обратный звонок</a>
+							<a href="#" class="callback-link show-popup-callback callback">Обратный звонок</a>
 
 						</p>
 
@@ -1446,6 +1629,16 @@
 		<script src="js/scripts.js"></script>
 
 		<script>
+
+		(function($){
+
+			$(window).on("load",function(){
+				
+				$(".popup-scroll").mCustomScrollbar();
+
+			});
+
+		})(jQuery);
 			
 		$(".promo-slider").slick({
 
