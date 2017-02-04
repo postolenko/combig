@@ -28,6 +28,12 @@ $(document).ready(function() {
         getScrollToTopBtn();
 
 
+        // $("." + popupClass).css({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"});
+
+        // getPopupPosition(popupClass);
+
+        $("." + popupClass).css({"left" : ( $(window).width() - $("." + popupClass).width() ) / 2 + "px"});
+
         $("." + popupClass).css({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"});
 
         // ----------------------------------------
@@ -211,11 +217,26 @@ $(document).ready(function() {
 
             $(".popup-sect").fadeOut(300);
 
-            $(".popup").fadeOut(300);
+            $("." + popupClass).fadeOut(300);
 
         });
 
     });
+
+
+    // -----------------------------------------------------------
+
+    // function getPopupPosition(popupClass) {
+
+    //     $("." + popupClass).css({"left" : ( $(window).width() - $("." + popupClass).width() ) / 2 + "px"});
+
+    //     setTimeout(function() {
+
+    //         $("." + popupClass).animate({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"}, 700);
+
+    //     }, 300);
+
+    // }
 
     // -----------------------------------------------------------
 
