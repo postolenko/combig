@@ -30,7 +30,12 @@
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+	<script src="vendors/js/plugins/jquery.lazyload.mini.js"></script>
+	<script src="vendors/js/plugins/colorbox/jquery.colorbox-min.js"></script>
 
+	<link rel="stylesheet" href="vendors/css/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
+	
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 
@@ -190,6 +195,8 @@
 						</a>
 
 						<h2 class="logo-h">Сделаем то,<br /> что другие не в силах!</h2>
+
+						<h2 class="logo-h-resp">Сделаем то, что другие не в силах!</h2>
 
 					</div>
 
@@ -448,7 +455,7 @@
 
 							</div>
 
-							<div class="thumbnail-box">
+							<div class="thumbnail-box smart-100">
 								
 								<div class="thumbnail">
 									
@@ -1258,9 +1265,9 @@
 							
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img7.jpg" alt="">
+									<img src="img/img7.jpg" alt="" rel="">
 
 								</div>
 
@@ -1268,9 +1275,9 @@
 
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img8.jpg" alt="">
+									<img src="img/img8.jpg" alt="" rel="">
 
 								</div>
 
@@ -1278,9 +1285,9 @@
 
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img9.jpg" alt="">
+									<img src="img/img9.jpg" alt="" rel="">
 
 								</div>
 
@@ -1288,9 +1295,9 @@
 
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img7.jpg" alt="">
+									<img src="img/img7.jpg" alt="" rel="">
 
 								</div>
 
@@ -1298,9 +1305,9 @@
 
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img8.jpg" alt="">
+									<img src="img/img8.jpg" alt="" rel="">
 
 								</div>
 
@@ -1308,9 +1315,9 @@
 
 							<div class="thumbnail">
 
-								<div class="img-box">
+								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img9.jpg" alt="">
+									<img src="img/img9.jpg" alt="" rel="">
 
 								</div>
 
@@ -1497,6 +1504,8 @@
 
 							<img src="img/logo.png" class="logo-img" alt="">
 
+							<h2 class="logo-h-resp">Сделаем то,<br /> что другие не в силах!</h2>
+
 							<p>2011 - 2017 © Комбиг</p>
 
 						</a>
@@ -1599,7 +1608,36 @@
 			});
 
 		})(jQuery);
-			
+
+		$(document).ready(function() {
+			$(".fancybox-thumb").fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
+		});
+
+		// $(document).ready(function () {
+		//     $(".gallery").lazyload({effect:"fadeIn"});
+		//     $(".gallery[rel='colorbox']").colorbox({current:"Фото {current} из {total}"});
+		// });
+
+		// $(".img-box[rel='colorbox']").colorbox({
+		//     maxWidth:"90%",
+		//     maxHeight:"90%",
+		//     opacity:"0.7",
+		//     current: "изображение {current} из {total}"
+		// });
+
+
 		$(".promo-slider").slick({
 
 			dots: true,

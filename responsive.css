@@ -40,6 +40,10 @@
 	    min-width: 100%;
 	}
 
+	.main-nav-link {
+	    padding: 10px 10px;
+	}
+
 	/*-- /Header --*/
 
 	.promo-slider {
@@ -99,6 +103,9 @@
 
 @media only screen and (max-width: 900px) {
 
+	.main-nav-link {
+	    padding: 10px 7px;
+	}
 
 }
 
@@ -183,6 +190,10 @@
 	    width: 50%;
 	}
 
+	.thumbnail-box.smart-100 {
+		width: 100%;
+	}
+
 	.news-thumbnail {
 	    width: 50%;
 	}
@@ -250,10 +261,14 @@
 	}
 
 	.footer .col-1,
+	.footer .col-3 {
+		width: 59%;
+		padding: 10px 2% 10px 0;
+	}
+
 	.footer .col-2,
-	.footer .col-3,
 	.footer .col-4 {
-		width: 50%;
+		width: 41%;
 		padding: 10px 0;
 	}
 
@@ -359,6 +374,15 @@
 		font-size: 23px;
 	}
 
+	h2.logo-h {
+		display: none;
+	}
+
+	h2.logo-h-resp {
+	    display: inline-block;
+	    vertical-align: top;
+	}
+
 	.show-popup {
 		display: none;
 	}
@@ -380,7 +404,6 @@
 	}
 
 	.advantages-thumbnails .thumbnail-box {
-	    width: 100%;
 	    padding: 11px 3%;
 	}
 
@@ -391,8 +414,14 @@
 	    margin: 0 auto;
 	}
 
+	.advantages-thumbnails .thumbnail h3 {
+		font-size: 13px;
+		line-height: 16px;
+	}
+
 	.advantages-thumbnails .thumbnail p {
 	    padding: 5px 0;
+	    font-size: 13px;
 	}
 
 	section.section-3-bg {
@@ -439,6 +468,10 @@
 	.news-thumbnail {
 	    width: 100%;
 	    padding: 0 1%;
+	}
+
+	.how-work-thumbnails .thumbnail .count-thumb {
+	    left: 0px;
 	}
 
 	.article-thumbanails {
@@ -570,6 +603,15 @@
 	.footer .col-3, 
 	.footer .col-4 {
 	    padding: 10px 2% 10px 0;
+	}
+
+	.footer  h3 {
+	    font-size: 12px;
+	    padding: 2px 0
+	}
+
+	.footer .seo-txt li a {
+	    font-size: 12px;
 	}
 
 	/*-- /Footer --*/
