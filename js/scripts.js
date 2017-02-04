@@ -33,7 +33,9 @@ $(document).ready(function() {
 
         // popupPosition(popupClass);
 
-        $(".popup").css({"top" : ( $(window).height() - $(".popup").outerHeight(true) ) / 2 + "px"});
+        // $(".popup").css({"top" : ( $(window).height() - $(".popup").outerHeight(true) ) / 2 + "px"});
+
+        $("." + popupClass).css({"top" : ( $(window).height() - $("." + popupClass).outerHeight(true) ) / 2 + "px"});
 
         // ----------------------------------------
 
