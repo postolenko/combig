@@ -1267,7 +1267,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img7.jpg" alt="" rel="">
+									<img src="img/img7.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1277,7 +1277,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img8.jpg" alt="" rel="">
+									<img src="img/img8.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1287,7 +1287,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img9.jpg" alt="" rel="">
+									<img src="img/img9.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1297,7 +1297,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img7.jpg" alt="" rel="">
+									<img src="img/img7.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1307,7 +1307,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img8.jpg" alt="" rel="">
+									<img src="img/img8.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1317,7 +1317,7 @@
 
 								<div class="img-box fancybox-thumb">
 									
-									<img src="img/img9.jpg" alt="" rel="">
+									<img src="img/img9.jpg" alt="" class="img-modal">
 
 								</div>
 
@@ -1326,6 +1326,20 @@
 						</div>
 
 					</div>
+
+					<!-- HTML для popup с фотографией  -->
+
+					<div class="modal-popup">
+						
+						<div class="modal-popup-bg"></div>
+
+						<button type="button" class="close-popup-photo">&#10006;</button>
+							
+						<img class="big-photo" src="img/img7.jpg" alt="">
+
+					</div>
+
+					<!-- /HTML для popup с фотографией  -->
 
 				</section>
 
@@ -1510,7 +1524,7 @@
 
 						</a>
 
-						<p>г.Москва, ул. Дорожная 54-Б<br /> м.Аннино</p>
+						<p>г.Москва, ул. Дорожная 54-Б м.Аннино</p>
 
 						<p class="job-time">ПН-ПТ с 10:00 до 18:00</p>
 
@@ -1609,43 +1623,12 @@
 
 		})(jQuery);
 
-		$(document).ready(function() {
-			$(".fancybox-thumb").fancybox({
-				prevEffect	: 'none',
-				nextEffect	: 'none',
-				helpers	: {
-					title	: {
-						type: 'outside'
-					},
-					thumbs	: {
-						width	: 50,
-						height	: 50
-					}
-				}
-			});
-		});
-
-		// $(document).ready(function () {
-		//     $(".gallery").lazyload({effect:"fadeIn"});
-		//     $(".gallery[rel='colorbox']").colorbox({current:"Фото {current} из {total}"});
-		// });
-
-		// $(".img-box[rel='colorbox']").colorbox({
-		//     maxWidth:"90%",
-		//     maxHeight:"90%",
-		//     opacity:"0.7",
-		//     current: "изображение {current} из {total}"
-		// });
-
-
 		$(".promo-slider").slick({
-
 			dots: true,
 			fade: true,
 			arrows: true,
 			speed: 900,
 			autoplaySpeed: 7000
-
 		});
 
 
@@ -1656,20 +1639,20 @@
 			autoplaySpeed: 7000,
 			slidesToShow: 3,
 			responsive: [
-  			  	{
-			      breakpoint: 768,
-			      settings: {
-			        slidesToShow: 2
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        slidesToShow: 1
-			      }
-			    }
-			  ]		
-			});
+			  	{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1
+		      }
+		    }
+		  ]		
+		});
 
 		</script>
 	

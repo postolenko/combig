@@ -188,6 +188,8 @@
 
 						<h2 class="logo-h">Сделаем то,<br /> что другие не в силах!</h2>
 
+						<h2 class="logo-h-resp">Сделаем то, что другие не в силах!</h2>
+
 					</div>
 
 					<div class="col col-2">
@@ -650,6 +652,8 @@
 
 							<img src="img/logo.png" class="logo-img" alt="">
 
+							<h2 class="logo-h-resp">Сделаем то,<br /> что другие не в силах!</h2>
+
 							<p>2011 - 2017 © Комбиг</p>
 
 						</a>
@@ -666,7 +670,7 @@
 
 						<p class="padding-0">
 
-							<a href="#" class="callback-link">Обратный звонок</a>
+							<a href="#" class="callback-link show-popup-callback callback">Обратный звонок</a>
 
 						</p>
 
@@ -759,14 +763,20 @@
 			autoplaySpeed: 7000,
 			slidesToShow: 3,
 			responsive: [
-  			  	{
-			      breakpoint: 768,
-			      settings: {
-			        slidesToShow: 2
-			      }
-			    }
-			  ]		
-			});
+			  	{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1
+		      }
+		    }
+		  ]		
+		});
 
 		</script>
 	

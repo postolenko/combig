@@ -86,7 +86,7 @@
 
 	.slick-arrow {
 	    top: 100% !important;
-	    margin: -70px 0 0 0;
+	    margin: -64px 0 0 0;
 	}
 
 	.slick-next.slick-arrow {
@@ -116,12 +116,39 @@
 
 @media only screen and (max-width: 768px) {
 
+	section {
+		padding: 30px 0;
+	}
+
+	h1 {
+	    font-size: 23px;
+	    line-height: 28px;
+	}
+
+	h1:before {
+	    top: -16px;
+	}
+
+	h2 {
+	    padding: 8px 0 15px 0;
+	}
+
 	h2.with-pseudo {
 		padding: 5px 0;
 	}
 
 	h2.with-pseudo:before {
-	     top: -15px;
+	     top: -13px;
+	}
+
+	h3 {
+	    font-size: 13px;
+	    padding: 10px 0 0 0;
+	}
+
+	p.date {
+	    font-size: 13px;
+	    padding: 0px 0 5px 0;
 	}
 
 	/*-- Header --*/
@@ -285,6 +312,10 @@
 	    padding: 10px 1%;
 	}
 
+	.link-thumbnails .thumbnail {
+	    width: 50%;
+	}
+
 	/*-- Footer --*/
 
 	.footer {
@@ -293,13 +324,13 @@
 
 	.footer .col-1,
 	.footer .col-3 {
-		width: 59%;
-		padding: 10px 2% 10px 0;
+		width: 61%;
+		padding: 10px 3% 10px 0;
 	}
 
 	.footer .col-2,
 	.footer .col-4 {
-		width: 41%;
+		width: 39%;
 		padding: 10px 0;
 	}
 
@@ -419,6 +450,19 @@
 	    vertical-align: top;
 	}
 
+	h2.with-pseudo {
+	    font-size: 23px;
+	    line-height: 28px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	ul.arrow-mark li, ul.with-num-mark li {
+	    font-size: 13px;
+	}
+
 	.show-popup {
 		display: none;
 	}
@@ -437,6 +481,10 @@
 	    padding: 2px 0 0 0;
 	    font-size: 11px;
 	    line-height: 12px;
+	}
+
+	section.section-2-bg {
+	    padding: 0px 0 5px 0;
 	}
 
 	.advantages-thumbnails .thumbnail-box {
@@ -640,18 +688,43 @@
 		display: block;
 	}
 
-	/*-- Footer --*/
-
-	.footer .col-1, 
-	.footer .col-2, 
-	.footer .col-3, 
-	.footer .col-4 {
-	    padding: 10px 2% 10px 0;
+	.section-5-bg .with-pseudo {
+	    padding: 30px 0 0 0;
 	}
+
+	.img-box,
+	.article .img-box,
+	.thumbnail .img-box {
+	    width: 100%;
+	}
+
+	.img-box img,
+	.article .img-box img,
+	.thumbnail .img-box img {
+	    width: auto;
+	    /*height: 100%;*/
+	    min-height: 100%;
+	}
+
+	.gold-btn.back-link {
+		display: block;
+		width: 80%;
+		cursor: pointer;
+		position: relative;
+		margin: 15px auto 8px auto;
+	}
+
+	/*-- Footer --*/
 
 	.footer  h3 {
 	    font-size: 12px;
 	    padding: 2px 0
+	}
+
+	.footer p {
+	    padding: 5px 0;
+	    font-size: 14px;
+	    line-height: 17px;
 	}
 
 	.footer .seo-txt li a {
@@ -659,6 +732,30 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	.link-thumbnails .thumbnail {
+	    padding: 5px 2%;
+	}
+
+	.link-thumbnails .thumbnail-cnt .img-box {
+	    height: 120px;
+	    margin: 15px 0;
+	}
+
+	.link-thumbnails .thumbnail-cnt h3 {
+		padding: 7px 0 6px 0;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.link-thumbnails .thumbnail-cnt p {
+		font-size: 13px;
+    	line-height: 21px;
+	}
 
 }
 
