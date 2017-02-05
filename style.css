@@ -317,10 +317,6 @@ ul.arrow-mark li:before {
     color: #f16522;
 }
 
-ul.num-list {
-
-}
-
 ul.num-list li {
     list-style: none;
     font-family: "Gotham Pro", Arial, Verdana, sans-serif;
@@ -623,10 +619,6 @@ p.date {
 .article .img-box img,
 .thumbnail .img-box img {
     display: block;
-/*    width: 100%;
-    height: auto;
-    border: none;*/
-
     width: auto;
     height: auto;
     min-width: 100%;
@@ -718,10 +710,6 @@ p.date {
 section.bredcrumbs-sect {
     padding: 17px 0 10px 0;
     background: rgba(254, 249, 219, 1);
-}
-
-.breadcrumbs {
-
 }
 
 .breadcrumbs li {
@@ -819,7 +807,6 @@ section.bredcrumbs-sect {
 }
 
 .header-top-row .col-1 {
-    /*width: 25%;*/
     width: 28%;
 }
 
@@ -857,8 +844,6 @@ h2.logo-h {
 }
 
 h2.logo-h-resp {
-   /* display: inline-block;
-    vertical-align: top;*/
     display: none;
     padding: 2px 0 0 0;
     font-family: "Gotham Pro", Arial, Verdana, sans-serif;
@@ -1197,7 +1182,6 @@ ul.contacts li a {
     font-size: 14px;
     line-height: 19px;
     font-weight: bold;
-    /*font-style: italic;*/
     color: #ffffff;
     text-transform: uppercase;
 
@@ -1285,8 +1269,6 @@ ul.contacts li a {
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
-/*    display: inline-block;
-    vertical-align: middle;*/
     display: none;
     width: 100%;
     padding: 7px 0;
@@ -1340,35 +1322,7 @@ ul.contacts li a {
     background: rgba(255, 255, 255, 1);
 }
 
-/*.respmenubtn-active span {
-    width: 54px !important;
-    border: 1px solid #ffffff;
-    background: rgba(255, 255, 255, 1);
-}
-
-.respmenubtn-active span:last-child {
-    display: none;
-}
-
-.respmenubtn-active span:first-child {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin: 5px 0 0 0;
-    top: 4px;
-    position: relative;
-}
-
-.respmenubtn-active span:nth-child(2) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}*/
-
 .hide-main-nav {
-    /*display: block;*/
     display: none;
     width: 36px;
     height: 36px;
@@ -1522,8 +1476,6 @@ section.section-1-bg {
     width: 100%;
     height: auto;
 }
-
-
 
 /*-- /Main Page Section 1 --*/
 
@@ -1771,10 +1723,6 @@ section.section-4-bg h2 {
     border-radius: 6px;
 }
 
-/*.callback-form .inpt-field input {
-    padding: 0 10px;
-}*/
-
 .textarea-box {
     display: inline-block;
     vertical-align: top;
@@ -1828,7 +1776,6 @@ section.section-4-bg h2 {
     text-align: left;
 }
 
-
 .callback-form .sbmit-btn-box {
     display: inline-block;
     vertical-align: top;
@@ -1869,7 +1816,6 @@ section.section-4-bg h2 {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    /*padding: 20px 1%;*/
     padding: 10px 1%;
 }
 
@@ -1972,10 +1918,6 @@ section.section-4-bg h2 {
 .section-6-bg {
     background: rgba(254, 248, 219, 1);
     padding: 50px 0;
-}
-
-.how-work-thumbnails {
-
 }
 
 .how-work-thumbnails .thumbnail {
@@ -2169,10 +2111,6 @@ section.section-4-bg h2 {
     text-align: right;
 }
 
-.calc-num .inpt-box label {
-
-}
-
 .calc-box .calc-result input[type=text] {
     display: inline-block;
     vertical-align: top;
@@ -2199,8 +2137,6 @@ section.section-4-bg h2 {
 .calc-box .calc-result input:focus::-moz-placeholder          { color:#ffffff;  }
 .calc-box .calc-result input:focus:-moz-placeholder           { color:#ffffff;  }
 .calc-box .calc-result input:focus:-ms-input-placeholder      { color:#ffffff;  }
-
-
 
 .calc-form .calc-descript p {
     display: table;
@@ -2267,10 +2203,6 @@ section.section-4-bg h2 {
 
 .accordeon-item.active .accordeon-item-txt-wrapp {
     height: auto;
-}
-
-.accordeon-item-txt {
-
 }
 
 .accordeon-item-txt p {
@@ -2378,7 +2310,6 @@ section.section-10-bg {
     color: #f9f1cb;
 }
 
-
 .testimonial-txt:after {
     display: inline-block;
     vertical-align: top;
@@ -2400,7 +2331,6 @@ section.section-10-bg {
     font-weight: normal;
     color: #363541;
 }
-
 
 /*-- /Main Page Section 11 --*/
 
@@ -2479,7 +2409,6 @@ section.section-10-bg {
 .ytp-title-link.yt-uix-sessionlink {
     opacity: 0 !important;
 }
-
 
 /*-- /Main Page Section 13 --*/
 
@@ -2639,10 +2568,6 @@ section.section-10-bg {
     background: rgba(254, 249, 219, 1);
 }
 
-.article {
-
-}
-
 .article .left {
     display: block;
     width: 32%;
@@ -2738,7 +2663,6 @@ section.section-10-bg {
     display: none;
 }
 
-
 /*-- /About Us Page Section - 3 - Our Team Section --*/
 
 
@@ -2766,7 +2690,6 @@ section.section-10-bg {
 .service-thumbnails {
     width: 102%;
     margin: 0 0 0 -1%;
-    /*overflow: hidden;*/
     padding: 10px 0 0 0;
 }
 
@@ -2866,6 +2789,7 @@ footer {
 
 .footer .logo p {
     padding: 11px 0 0 0;
+    white-space: nowrap;
 }
 
 .footer h3 {
@@ -2946,10 +2870,6 @@ footer {
     border-bottom: 1px solid rgba(241, 101, 34, 1);
 }
 
-.footer .seo-txt {
-
-}
-
 .footer .seo-txt li {
     padding: 4px 0;
 }
@@ -3002,7 +2922,6 @@ footer {
 /*-- Scroll to Top --*/
 
 .scroll-top {
-    /*display: block;*/
     display: none;
     width: 82px;
     height: 82px;
@@ -3038,7 +2957,6 @@ footer {
     vertical-align: top;
     cursor: pointer;
     position: fixed;
-    /*top: 20%;*/
     top: 270px;
     right: -104px;
     z-index: 5;
@@ -3090,7 +3008,6 @@ footer {
 /*-- Popup --*/
 
 .popup-sect {
-    /*display: block;*/
     display: none;
     width: 100%;
     height: 100%;
@@ -3111,14 +3028,12 @@ footer {
 }
 
 .popup {
-    /*display: block;*/
     display: none;
     width: 90%;
     max-width: 560px;
     padding: 38px 0 30px;
     background: rgba(232, 76, 37, 1);
     border: 5px solid #ffffff;
-    /*position: relative;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -3157,14 +3072,6 @@ footer {
     max-height: 75vh;
 }
 
-.popup .popup-callback {
-
-}
-
-.popup-callback-form {
-
-}
-
 .popup-callback-form .inpt-field {
     display: block;
     width: 96%;
@@ -3200,7 +3107,6 @@ footer {
 /*-- Modal Popup IMG--*/
 
 .modal-popup {
-    /*display: block;*/
     display: none;
     width: 100%;
     height: 100%;

@@ -1,17 +1,5 @@
 $(document).ready(function() {
 
-    //   preload
-    // $(window).on('load', function () {
-
-    //     setTimeout(function() {
-
-    //         $(".preload-bg").fadeOut(500);
-
-    //     }, 700);
-  
-
-    // });
-
     var w = window,
     d = document,
     e = d.documentElement,
@@ -19,9 +7,55 @@ $(document).ready(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     // bodyHeight = w.innerHeight || e.clientHeight || g.clientHeight;
 
+    // -------------------
+
     var popupClass;
 
+    // -------------------
+
+    var indexMainNavLink;
+
+    // -------------------
+
+    var accordeonIndex;
+    var accordeonItemCount = $(".accordeon-item").length - 1;
+    var parentAccordeonH;
+
+    // -------------------
+
+    var countNumMarkLists = $("ul.with-num-mark").length - 1;
+    var markNumListsIndex;
+    var markNumListsItemIndex;
+    var countNumItemsList;
+
+    // -------------------
+
+    var countNumMarkLists = $("ul.num-list").length - 1;
+    var markNumListsIndex;
+    var markNumListsItemIndex;
+    var countNumItemsList;
+
+    // -------------------
+
+
+
+    // -------------------
+
+    var miniaturesCount = $(".img-box-rsz").length - 1;
+
+    var miniatureIndex;
+
+    var miniatureWidth;
+    var miniatureHeight;
+
+    var miniatureWidthImg;
+    var miniatureHeightImg;
+
+    // -------------------
+
     getScrollToTopBtn();
+
+    getImgSize();
 
     getScrollHeaderPosition();
 
@@ -39,6 +73,8 @@ $(document).ready(function() {
         // ---------------------
 
         getScrollToTopBtn();
+
+        getImgSize();
 
         getScrollHeaderPosition();
 
@@ -74,7 +110,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        var indexMainNavLink;
+        // var indexMainNavLink;
 
         $(".main-nav-link").bind({
           mouseenter: function() {
@@ -100,11 +136,11 @@ $(document).ready(function() {
 
     $(function() {
 
-        var accordeonIndex;
+        // var accordeonIndex;
 
-        var accordeonItemCount = $(".accordeon-item").length - 1;
+        accordeonItemCount = $(".accordeon-item").length - 1;
 
-        var parentAccordeonH;
+        // var parentAccordeonH;
 
         $(".accordeon-item-h").click(function() {
 
@@ -146,13 +182,13 @@ $(document).ready(function() {
 
         $("ul.with-num-mark li").prepend("<span class='item-num-col'><i class='item-num'></i></span>");
 
-        var countNumMarkLists = $("ul.with-num-mark").length - 1;
+        countNumMarkLists = $("ul.with-num-mark").length - 1;
 
-        var markNumListsIndex;
+        // var markNumListsIndex;
 
-        var markNumListsItemIndex;
+        // var markNumListsItemIndex;
 
-        var countNumItemsList;
+        // var countNumItemsList;
 
         for( markNumListsItemIndex = 0; markNumListsItemIndex <= countNumMarkLists; markNumListsItemIndex++ ) {
 
@@ -175,13 +211,13 @@ $(document).ready(function() {
 
         $("ul.num-list li").prepend("<span class='num-list-index'></span>");
 
-        var countNumMarkLists = $("ul.num-list").length - 1;
+        countNumMarkLists = $("ul.num-list").length - 1;
 
-        var markNumListsIndex;
+        // var markNumListsIndex;
 
-        var markNumListsItemIndex;
+        // var markNumListsItemIndex;
 
-        var countNumItemsList;
+        // var countNumItemsList;
 
         for( markNumListsItemIndex = 0; markNumListsItemIndex <= countNumMarkLists; markNumListsItemIndex++ ) {
 
@@ -275,13 +311,9 @@ $(document).ready(function() {
 
             bigPhotoSrc = $(this).attr("src");
 
-            console.log(bigPhotoSrc);
-
             indexOfSlashBigPhoto = bigPhotoSrc.lastIndexOf("/");
 
             nameFileBigPhoto = bigPhotoSrc.slice(indexOfSlashBigPhoto + 1);
-
-            console.log(nameFileBigPhoto);
 
             $(".big-photo").attr("src", previewPhotoPath + nameFileBigPhoto);
 
@@ -310,6 +342,66 @@ $(document).ready(function() {
         });
 
     });
+
+    // -----------------------------------------------------------
+
+    function getImgSize() {
+
+        miniaturesCount = $(".img-box-rsz").length - 1;
+
+        // var miniatureIndex;
+
+        // var miniatureWidth;
+        // var miniatureHeight;
+
+        // var miniatureWidthImg;
+        // var miniatureHeightImg;
+
+        for( miniatureIndex = 0; miniatureIndex <= miniaturesCount; miniatureIndex++ ) {
+
+            miniatureWidth = $(".img-box-rsz:eq("+ miniatureIndex  +")").width();
+
+            miniatureHeight = $(".img-box-rsz:eq("+ miniatureIndex  +")").outerHeight(true);
+
+            miniatureWidthImg = $(".img-box-rsz:eq("+ miniatureIndex  +") img").width();
+
+            miniatureHeightImg = $(".img-box-rsz:eq("+ miniatureIndex  +") img").outerHeight(true);
+
+            if( miniatureHeightImg < miniatureHeight || miniatureWidthImg < miniatureWidth ) {
+
+                $(".img-box-rsz:eq("+ miniatureIndex  +") img").css({
+                    "min-width" : miniatureWidth + "px",
+                    "min-height" : miniatureHeight + "px"
+                });
+
+            } else if( miniatureHeightImg < miniatureHeight || miniatureWidthImg > miniatureWidth ) {
+
+                $(".img-box-rsz:eq("+ miniatureIndex  +") img").css({
+                    "max-width" : miniatureWidth + "px",
+                    "min-height" : "auto"
+                });
+
+            } else if( miniatureHeightImg < miniatureHeight || miniatureWidthImg > miniatureWidth ) {
+
+                $(".img-box-rsz:eq("+ miniatureIndex  +") img").css({
+                    "min-width" : "auto",
+                    "min-height" : miniatureHeight + "px"
+                });
+
+            } else {
+
+                $(".img-box-rsz:eq("+ miniatureIndex  +") img").css({
+                    "min-width" : 100 + "%",
+                    "min-height" : 100 + "%"
+                });
+
+            }
+        }
+
+    }
+
+
+
 
     // -----------------------------------------------------------
 
