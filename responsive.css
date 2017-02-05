@@ -19,8 +19,12 @@
 	}
 
 	.header-top-row .col-2 {
-		width: 44%;
+		width: 42%;
 		/*display: none;*/
+	}
+
+	.header-top-row .col-2 ul.contacts {
+	    padding: 6px 0 0 0;
 	}
 
 	.header-top-row .col-2 ul li {
@@ -28,7 +32,7 @@
 	}
 
 	.header-top-row .col-3 {
-	    width: 31%;
+	    width: 30%;
 	    text-align: right;
 	}
 
@@ -112,6 +116,14 @@
 
 @media only screen and (max-width: 768px) {
 
+	h2.with-pseudo {
+		padding: 5px 0;
+	}
+
+	h2.with-pseudo:before {
+	     top: -15px;
+	}
+
 	/*-- Header --*/
 
 	.header-top-row .col-2 .search {
@@ -120,11 +132,6 @@
 
 	.resp-search-box {
 		display: block;
-	}
-
-	.resp-contacts {
-		display: block;
-		text-align: right;
 	}
 
 	.main-nav {
@@ -254,6 +261,30 @@
 		max-width: 220px;
 	}
 
+	.article-sect-bg {
+		padding: 20px 0;
+	}
+
+	.article .left,
+	.article .right {
+	    float: none;
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.team-sect {
+	    padding: 10px 0;
+	}
+
+	.our-team-thumbnails {
+	    padding: 0;
+	}
+
+	.our-team-thumbnails .thumbnail {
+	    width: 50%;
+	    padding: 10px 1%;
+	}
+
 	/*-- Footer --*/
 
 	.footer {
@@ -309,6 +340,11 @@
 
 	.header-top-row .col-3 {
 	    width: 57%;
+	}
+
+	.resp-contacts {
+		display: block;
+		text-align: right;
 	}
 
 	/*-- /Header --*/
@@ -594,6 +630,14 @@
 	.vote-row .gold-btn {
 		max-width: 250px;
 		min-width: auto;
+	}
+
+	.our-team-thumbnails {
+		display: none;
+	}
+
+	.our-team-slider-box {
+		display: block;
 	}
 
 	/*-- Footer --*/

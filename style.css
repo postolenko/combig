@@ -623,9 +623,14 @@ p.date {
 .article .img-box img,
 .thumbnail .img-box img {
     display: block;
-    width: 100%;
+/*    width: 100%;
     height: auto;
-    border: none;
+    border: none;*/
+
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
 
     -webkit-transition-property: transform;
     -webkit-transition-duration: .6s;
@@ -814,15 +819,16 @@ section.bredcrumbs-sect {
 }
 
 .header-top-row .col-1 {
-    width: 25%;
+    /*width: 25%;*/
+    width: 28%;
 }
 
 .header-top-row .col-2 {
-    width: 44%;
+    width: 46%;
 }
 
 .header-top-row .col-3 {
-    width: 31%;
+    width: 26%;
     text-align: right;
 }
 
@@ -1072,6 +1078,7 @@ ul.contacts li a {
 .header-top-row .gold-btn {
     display: inline-block;
     vertical-align: top;
+    min-width: 172px;
     cursor: pointer;
     position: relative;
     margin: 15px 0 8px 0;
@@ -1624,8 +1631,10 @@ section.section-3-bg {
 
 .article .img-box img {
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
+    min-width: 100%;
+    min-height: 100%;    
     border: none;
 
     -webkit-transition-property: transform;
@@ -2678,8 +2687,9 @@ section.section-10-bg {
 }
 
 .our-team-thumbnails .img-box {
+    display: block;
     height: 230px;
-    margin: 10px 0 25px 0;
+    margin: 10px auto 25px auto;
 }
 
 .our-team-thumbnails .thumbnail h3 {
@@ -2722,6 +2732,10 @@ section.section-10-bg {
     font-weight: normal;
     color: #363541;
     padding: 15px 0;
+}
+
+.our-team-slider-box {
+    display: none;
 }
 
 
