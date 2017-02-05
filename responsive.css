@@ -235,7 +235,12 @@
 	}
 
 	.inpt-field .fa {
-	     padding: 0 0 0 4%;
+		width: 10%;
+	    padding: 0 0 0 2%;
+	}
+
+	.inpt-field input {
+		width: 90%;
 	}
 
 	.how-work-thumbnails .thumbnail {
@@ -755,6 +760,17 @@
 		font-size: 13px;
     	line-height: 21px;
 	}
+
+	.inpt-field .fa {
+		width: 11%;
+		padding: 0 0 0 1%;
+	}
+
+	.inpt-field input {
+		width: 89%;
+		padding: 0 0 0 1%;
+	}
+
 
 }
 
