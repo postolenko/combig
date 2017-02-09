@@ -291,7 +291,7 @@ ul.with-num-mark li .item-num-col .item-num {
     color: #ffffff;
 }
 
-ul.arrow-mark li,
+ol li,
 ul.with-num-mark li {
     display: table;
     width: 100%;
@@ -305,7 +305,7 @@ ul.with-num-mark li {
     list-style: none;
 }
 
-ul.arrow-mark li:before {
+ol li:before {
     display: table-cell;
     vertical-align: top;
     width: 45px;
